@@ -1,3 +1,48 @@
+/* Отключение неиспользуемой раскладки клавиатуры */
+	Lampa.SettingsApi.addParam({
+			component: 'Multi_Menu_Component', 
+			param: {
+				name: 'KeyboardSwitchOff',
+				type: 'select', //доступно select,input,trigger,title,static
+				values: {					//значения (слева) выставляемые в поле TVmenu через Storage, справа - их видимое название в меню
+					SwitchOff_None: 	'Не отключать',
+					SwitchOff_UA: 		'Українська',
+					SwitchOff_RU: 		'Русский',
+					SwitchOff_EN: 		'English',
+				},
+					default: 'SwitchOff_None'
+				},
+				field: {
+					name: 'Неиспользуемая клавиатура', //Название подпункта меню
+					description: 'Выберите язык для отключения' //Комментарий к подпункту
+				},
+				onChange: function (value) { //Действия при изменении подпункта
+					if (Lampa.Storage.field('KeyboardSwitchOff') == 'SwitchOff_UA')	{
+						Lampa.Storage.set('keyboard_default_lang', 'default')
+						var elementUA = $('.selectbox-item.selector > div:contains("Українська")');
+						if(elementUA.length > 0) elementUA.parent('div').hide();
+					}
+					if (Lampa.Storage.field('KeyboardSwitchOff') == 'SwitchOff_RU')	{
+						Lampa.Storage.set('keyboard_default_lang', 'uk')
+						var elementRU = $('.selectbox-item.selector > div:contains("Русский")');
+						if(elementRU.length > 0) elementRU.parent('div').hide();
+					}
+					if ((Lampa.Storage.field('KeyboardSwitchOff') == 'SwitchOff_EN')&(Lampa.Storage.field('language') == 'uk'))	{
+						Lampa.Storage.set('keyboard_default_lang', 'uk')
+						var elementEN = $('.selectbox-item.selector > div:contains("English")');
+						if(elementEN.length > 0) elementEN.parent('div').hide();
+					}
+					if ((Lampa.Storage.field('KeyboardSwitchOff') == 'SwitchOff_EN')&(Lampa.Storage.field('language') == 'ru'))	{
+						Lampa.Storage.set('keyboard_default_lang', 'default')
+						var elementEN = $('.selectbox-item.selector > div:contains("English")');
+						if(elementEN.length > 0) elementEN.parent('div').hide();
+					}
+				}
+	});		
+/*End Отключение неиспользуемой раскладки */
+
+
+
 /**
 *-----
 *online
