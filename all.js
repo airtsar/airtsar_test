@@ -72,7 +72,7 @@ var _0x535037=_0xb983;(function(_0x26d1cd,_0x558682){var _0x418333=_0xb983,_0xa3
 *-----
 */
 
-(function($) {
+(function() {
 	'use strict';
 
 Lampa.Platform.tv();
@@ -226,4 +226,4 @@ Lampa.SettingsApi.addParam({
 	Lampa.Storage.set('parse_lang', 'lg');
         }
         
- })($);
+ })();
