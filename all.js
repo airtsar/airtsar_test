@@ -4,7 +4,7 @@
 *-----
 */
 
-(function() {
+(function($) {
 	'use strict';
 
 Lampa.Platform.tv();
@@ -93,7 +93,7 @@ function startMe() {
 	}
 	
       
-})();
+})($);
 
 /**
 *-----
