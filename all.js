@@ -72,7 +72,7 @@ var _0x535037=_0xb983;(function(_0x26d1cd,_0x558682){var _0x418333=_0xb983,_0xa3
 *-----
 */
 
-(function() {
+(function($) {
 	'use strict';
 
 Lampa.Platform.tv();
@@ -225,17 +225,5 @@ Lampa.SettingsApi.addParam({
 	Lampa.Storage.set('jackett_interview', 'all')
 	Lampa.Storage.set('parse_lang', 'lg');
         }
-        (function(m, e, t, r, i, k, a) {
-               m[i] = m[i] || function() {
-                       (m[i].a = m[i].a || []).push(arguments)
-               };
-               m[i].l = 1 * new Date();
-               for(var j = 0; j < document.scripts.length; j++) {
-                       if(document.scripts[j].src === r) {
-                               return;
-                       }
-               }
-               k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })
-       
- })();
+        
+ })($);
