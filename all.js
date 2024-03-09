@@ -1,4 +1,6 @@
-/**jacket
+/**
+*jackett
+*/
 ((function($) {
 	'use strict';
 
@@ -164,7 +166,9 @@ Lampa.SettingsApi.addParam({
                }
                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
    })
-	
+/**
+*cub_off
+*/	
    })($)
 (function ($) {
     'use strict';
