@@ -3,7 +3,7 @@
 
   var Defined = {
     api: 'lampac',
-    localhost: 'https://airtsar.github.io/',
+    localhost: 'https://api.prisma.ws/',
     apn: 'https://apn.watch/'
   };
 
