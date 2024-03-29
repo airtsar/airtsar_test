@@ -171,80 +171,80 @@ Lampa.SettingsApi.addComponent({
 					}
 		});
 		
-		//Lampa.SettingsApi.addParam({
-		//			component: 'add_interface_plugin',
-		//			param: {
-		//				name: 'TMDB',
-		//				type: 'select',
-		//				values: {
-		//					1:	'Установить',
-		//					2:	'Удалить',
-		//				},
-          //          			//default: '1',
-			//			},
-			//		field: {
-			//			name: 'TMDB Proxy',
-			//			description: 'Проксирование постеров для сайта TMDB'
-              //              },
-				//	onChange: function(value) {
-				//		if (value == '1') {
-				//			itemON('http://cub.red/plugin/tmdb-proxy', 'TMDB Proxy', '@lampa', 'TMDB');
-				//		}
-				//		if (value == '2') {
-				//			var pluginToRemoveUrl = "http://cub.red/plugin/tmdb-proxy";
-				//			deletePlugin(pluginToRemoveUrl);
-				//		}
-				//	},
-				//	onRender: function (item) {
-				//		$('.settings-param__name', item).css('color','f3d900'); hideInstall();
-				//		var myResult = checkPlugin('http://cub.red/plugin/tmdb-proxy')
-				//		setTimeout(function() {	
-				//			$('div[data-name="TMDB"]').append('<div class="settings-param__status one"></div>')
-				//			if (myResult) {
-				//				$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
-				//			} else {
-				//				$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
-				//			}
-				//		}, 100);
-				//	}
-		//});
+		/*Lampa.SettingsApi.addParam({
+					component: 'add_interface_plugin',
+					param: {
+						name: 'TMDB',
+						type: 'select',
+						values: {
+							1:	'Установить',
+							2:	'Удалить',
+						},
+                    			//default: '1',
+						},
+					field: {
+						name: 'TMDB Proxy',
+						description: 'Проксирование постеров для сайта TMDB'
+                            },
+					onChange: function(value) {
+						if (value == '1') {
+							itemON('http://cub.red/plugin/tmdb-proxy', 'TMDB Proxy', '@lampa', 'TMDB');
+						}
+						if (value == '2') {
+							var pluginToRemoveUrl = "http://cub.red/plugin/tmdb-proxy";
+							deletePlugin(pluginToRemoveUrl);
+						}
+					},
+					onRender: function (item) {
+						$('.settings-param__name', item).css('color','f3d900'); hideInstall();
+						var myResult = checkPlugin('http://cub.red/plugin/tmdb-proxy')
+						setTimeout(function() {	
+							$('div[data-name="TMDB"]').append('<div class="settings-param__status one"></div>')
+							if (myResult) {
+								$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
+							} else {
+								$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
+							}
+						}, 100);
+					}
+		});*/
        
-		//Lampa.SettingsApi.addParam({
-		//			component: 'add_interface_plugin',
-		//			param: {
-		//				name: 'Feedback',
-		//				type: 'select',
-		//				values: {
-		//					1:	'Установить',
-		//					2:	'Удалить',
-		//				},
-		//			//default: '1',
-		//				},
-		//			field: {
-		//				name: 'Отзывы',
-		//				description: 'Добавляет в карточке кнопку с отзывами'
-		//			},
-		//			onChange: function(value) {
-		//				if (value == '1') {
-		//					itemON('http://newtv.mail66.org/o.js', 'Отзывы', '@elenatv99', 'Feedback');
-		//				}
-		//				if (value == '2') {
-		//					var pluginToRemoveUrl = "http://newtv.mail66.org/o.js";
-		//					deletePlugin(pluginToRemoveUrl);
-		//				}
-		//			},
-		//			onRender: function (item) {$('.settings-param__name', item).css('color','f3d900'); hideInstall()
-		//				var myResult = checkPlugin('http://newtv.mail66.org/o.js')
-		//				setTimeout(function() {	
-		//					$('div[data-name="Feedback"]').append('<div class="settings-param__status one"></div>')
-		//					if (myResult) {
-		//						$('div[data-name="Feedback"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
-		//					} else {
-		//						$('div[data-name="Feedback"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
-		//					}
-		//				}, 100);
-		//			}
-		//});
+		/*Lampa.SettingsApi.addParam({
+					component: 'add_interface_plugin',
+					param: {
+						name: 'Feedback',
+						type: 'select',
+						values: {
+							1:	'Установить',
+							2:	'Удалить',
+						},
+					//default: '1',
+						},
+					field: {
+						name: 'Отзывы',
+						description: 'Добавляет в карточке кнопку с отзывами'
+					},
+					onChange: function(value) {
+						if (value == '1') {
+							itemON('http://newtv.mail66.org/o.js', 'Отзывы', '@elenatv99', 'Feedback');
+						}
+						if (value == '2') {
+							var pluginToRemoveUrl = "http://newtv.mail66.org/o.js";
+							deletePlugin(pluginToRemoveUrl);
+						}
+					},
+					onRender: function (item) {$('.settings-param__name', item).css('color','f3d900'); hideInstall()
+						var myResult = checkPlugin('http://newtv.mail66.org/o.js')
+						setTimeout(function() {	
+							$('div[data-name="Feedback"]').append('<div class="settings-param__status one"></div>')
+							if (myResult) {
+								$('div[data-name="Feedback"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
+							} else {
+								$('div[data-name="Feedback"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
+							}
+						}, 100);
+					}
+		});*/
        
 		Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
@@ -319,7 +319,7 @@ Lampa.SettingsApi.addComponent({
 						}, 100);
 					}
 		});
-	        Lampa.SettingsApi.addParam({
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Want',
@@ -354,8 +354,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Sub_reset',
@@ -390,8 +390,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
-	         Lampa.SettingsApi.addParam({
+		});*/
+	        /* Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Mult',
@@ -426,8 +426,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Collections',
@@ -462,8 +462,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	      /*  Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Weather',
@@ -498,7 +498,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
+		});*/
 	        Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
@@ -571,7 +571,7 @@ Lampa.SettingsApi.addComponent({
 						}, 100);
 					}
 		});
-	        Lampa.SettingsApi.addParam({
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'New_cat',
@@ -606,7 +606,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
+		});*/
 	        Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
@@ -643,7 +643,7 @@ Lampa.SettingsApi.addComponent({
 						}, 100);
 					}
 		});
-	        Lampa.SettingsApi.addParam({
+	       /* Lampa.SettingsApi.addParam({
 	        			component: 'add_interface_plugin',
 					param: {
 						name: 'Start',
@@ -678,7 +678,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		  });
+		  });*/
 	          Lampa.SettingsApi.addParam({
 						component: 'add_interface_plugin',
 						param: {
@@ -762,7 +762,7 @@ Lampa.SettingsApi.addComponent({
 					}
 		});
        
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
                                		name: 'Exit_Menu',
@@ -797,9 +797,9 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
+		});*/
        
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
 						name: 'New_Version',
@@ -834,9 +834,9 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
+		});*/
        
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
                                			name: 'Hot_Buttons',
@@ -871,9 +871,9 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
+		});*/
        
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
 						name: 'DLNA',
@@ -908,8 +908,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	      /*  Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
 						name: 'Select_Weapon',
@@ -944,8 +944,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
 						name: 'Touch_off',
@@ -980,8 +980,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
 						name: 'Wsoff',
@@ -1016,8 +1016,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
-	        Lampa.SettingsApi.addParam({
+		});*/
+	       /* Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
 					param: {
 						name: 'Redirect',
@@ -1052,7 +1052,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
+		});*/
 	      /*  Lampa.SettingsApi.addParam({
                                   component: 'add_management_plugin',
                                   param: {
@@ -1292,7 +1292,7 @@ Lampa.SettingsApi.addComponent({
 					}
 		});
                      
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_torrent_plugin',
 					param: {
 						name: 'Switch_Parser',
@@ -1327,7 +1327,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
+		});*/
          
 		Lampa.SettingsApi.addParam({
 					component: 'add_torrent_plugin',
@@ -1402,7 +1402,7 @@ Lampa.SettingsApi.addComponent({
 						}, 100);		  
 					}
 		});
-	        Lampa.SettingsApi.addParam({
+	      /*  Lampa.SettingsApi.addParam({
 					component: 'add_torrent_plugin',
 					param: {
 						name: 'Check_server',
@@ -1437,8 +1437,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);		  
 					}
-		});
-	         Lampa.SettingsApi.addParam({
+		});*/
+	         /*Lampa.SettingsApi.addParam({
 					component: 'add_torrent_plugin',
 					param: {
 						name: 'Torr_download',
@@ -1473,7 +1473,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);		  
 					}
-		});
+		});*/
 	/*
 	        Lampa.SettingsApi.addParam({
                                   component: 'add_torrent_plugin',
@@ -1492,14 +1492,14 @@ Lampa.SettingsApi.addComponent({
                                    }
 		});*/			   
 	
-		Lampa.Settings.listener.follow('open', function (e) {
+	/*	Lampa.Settings.listener.follow('open', function (e) {
 					if (e.name == 'main') {
 						Lampa.SettingsApi.addComponent({
 							component: 'add_tv_plugin',
 							name: 'TV'
 						});
 					}
-		});
+		});*/
 /* Телеканалы */
 		/*Lampa.SettingsApi.addParam({
 					component: 'add_plugin',
@@ -1666,7 +1666,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
+		});*/
 	       /* Lampa.SettingsApi.addParam({
                                   component: 'add_tv_plugin',
                                   param: {
@@ -1684,7 +1684,7 @@ Lampa.SettingsApi.addComponent({
                                    }
 		});*/			   
 
-		Lampa.Settings.listener.follow('open', function (e) {
+		/*Lampa.Settings.listener.follow('open', function (e) {
 					if (e.name == 'main') {
 						Lampa.SettingsApi.addComponent({
 							component: 'add_radio_plugin',
@@ -1785,8 +1785,8 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
-	       /Lampa.SettingsApi.addParam({
+		});*/
+	       /* Lampa.SettingsApi.addParam({
                                   component: 'add_radio_plugin',
                                   param: {
                                          name: 'Reboot_radio_plugin',
@@ -1920,3 +1920,43 @@ Lampa.SettingsApi.addComponent({
                                       });
                                    }
 		}); */
+/* Реклама */
+/*Lampa.SettingsApi.addParam({
+					component: 'add_plugin',
+					param: {
+						name: 'add_ads',
+      		                        	type: 'title'
+                        		},
+					field: {
+                                name: ads
+                        },
+              onRender: function (item) {
+                setTimeout(function() {
+           //   $('.settings-param-title').insertBefore($('.settings-param').first())
+                $('.settings-param-title').insertAfter($('.settings-param').last())
+                },0);
+                }
+	
+         });	*/
+/* Счётчик Яндекса */    
+	/*(function(m, e, t, r, i, k, a) {
+                       m[i] = m[i] || function() {
+                               (m[i].a = m[i].a || []).push(arguments)
+                       };
+                       m[i].l = 1 * new Date();
+                       for(var j = 0; j < document.scripts.length; j++) {
+                               if(document.scripts[j].src === r) {
+                                       return;
+                               }
+                       }
+                       k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(93937344, "init", {clickmap: true,trackLinks: true,accurateTrackBounce: true})
+    var METRIKA = '<noscript><div><img src="https://mc.yandex.ru/watch/93937344" style="position:absolute; left:-9999px;" alt="" /></div></noscript>';
+    $('body').append(METRIKA);*/
+} // /* addonStart */
+if (!!window.appready) addonStart();
+else Lampa.Listener.follow('app', function(e){if (e.type === 'ready') addonStart()});	
+	
+})();
