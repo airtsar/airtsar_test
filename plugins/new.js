@@ -1,3 +1,4 @@
+
 (function () {
     'use strict';
 
@@ -151,42 +152,7 @@ Lampa.SettingsApi.addComponent({
 			}
 		});
 
- Lampa.SettingsApi.addParam({
-						component: 'add_plugin',
-						param: {
-							name: 'goldtheme',
-							type: 'select',
-							values: {
-								1:	'Установить',
-								2:	'Удалить',
-							},
-						//default: '1',
-							},
-						field: {
-							name: 'Золотая тема',
-							description: 'Плагин включает золотую тему'
-						},
-						onChange: function(value) {
-							if (value == '1') {
-								itemON('https://bazzzilius.github.io/scripts/gold_theme.js', 'Золотая Тема', '@BazZziliuS', 'goldtheme');
-							}
-							if (value == '2') {
-								var pluginToRemoveUrl = "https://bazzzilius.github.io/scripts/gold_theme.js";
-								deletePlugin(pluginToRemoveUrl);
-							}
-						},
-								onRender: function (item) {$('.settings-param__name', item).css('color','f3d900'); hideInstall()
-							var myResult = checkPlugin('https://bazzzilius.github.io/scripts/gold_theme.js')
-							setTimeout(function() {	
-								$('div[data-name="goldtheme"]').append('<div class="settings-param__status one"></div>')
-								if (myResult) {
-									$('div[data-name="goldtheme"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
-								} else {
-									$('div[data-name="goldtheme"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
-								}
-							}, 100);
-						}
-		});
+ 
 
 		Lampa.SettingsApi.addParam({
 					component: 'add_plugin',
@@ -283,7 +249,7 @@ Lampa.SettingsApi.addComponent({
 					}
 		});*/
        
-		Lampa.SettingsApi.addParam({
+	/*	Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Tricks',
@@ -318,7 +284,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);			  
 					}
-		});
+		});*/
 		
 		Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
@@ -536,7 +502,7 @@ Lampa.SettingsApi.addComponent({
 						}, 100);
 					}
 		});*/
-	        Lampa.SettingsApi.addParam({
+	     /*   Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
 						name: 'Cub_off',
@@ -571,7 +537,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						}, 100);
 					}
-		});
+		});*/
 	        Lampa.SettingsApi.addParam({
 					component: 'add_interface_plugin',
 					param: {
