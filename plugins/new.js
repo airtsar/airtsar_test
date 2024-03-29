@@ -1920,8 +1920,3 @@ Lampa.SettingsApi.addComponent({
                                       });
                                    }
 		}); */
-	
-/* Счётчик Яндекса */    
-	
-	
-})();
