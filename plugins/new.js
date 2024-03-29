@@ -1693,7 +1693,7 @@ Lampa.SettingsApi.addComponent({
 					}
 		});
 /* Радио */
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_plugin',
 					param: {
 						name: 'add_radio_plugin',
@@ -1786,7 +1786,7 @@ Lampa.SettingsApi.addComponent({
 						}, 100);
 					}
 		});
-	       /* Lampa.SettingsApi.addParam({
+	       /Lampa.SettingsApi.addParam({
                                   component: 'add_radio_plugin',
                                   param: {
                                          name: 'Reboot_radio_plugin',
