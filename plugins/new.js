@@ -171,43 +171,43 @@ Lampa.SettingsApi.addComponent({
 					}
 		});
 		
-		Lampa.SettingsApi.addParam({
-					component: 'add_interface_plugin',
-					param: {
-						name: 'TMDB',
-						type: 'select',
-						values: {
-							1:	'Установить',
-							2:	'Удалить',
-						},
-                    			//default: '1',
-						},
-					field: {
-						name: 'TMDB Proxy',
-						description: 'Проксирование постеров для сайта TMDB'
-                            },
-					onChange: function(value) {
-						if (value == '1') {
-							itemON('http://cub.red/plugin/tmdb-proxy', 'TMDB Proxy', '@lampa', 'TMDB');
-						}
-						if (value == '2') {
-							var pluginToRemoveUrl = "http://cub.red/plugin/tmdb-proxy";
-							deletePlugin(pluginToRemoveUrl);
-						}
-					},
-					onRender: function (item) {
-						$('.settings-param__name', item).css('color','f3d900'); hideInstall();
-						var myResult = checkPlugin('http://cub.red/plugin/tmdb-proxy')
-						setTimeout(function() {	
-							$('div[data-name="TMDB"]').append('<div class="settings-param__status one"></div>')
-							if (myResult) {
-								$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
-							} else {
-								$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
-							}
-						}, 100);
-					}
-		});
+		//Lampa.SettingsApi.addParam({
+		//			component: 'add_interface_plugin',
+		//			param: {
+		//				name: 'TMDB',
+		//				type: 'select',
+		//				values: {
+		//					1:	'Установить',
+		//					2:	'Удалить',
+		//				},
+          //          			//default: '1',
+			//			},
+			//		field: {
+			//			name: 'TMDB Proxy',
+			//			description: 'Проксирование постеров для сайта TMDB'
+              //              },
+				//	onChange: function(value) {
+				//		if (value == '1') {
+				//			itemON('http://cub.red/plugin/tmdb-proxy', 'TMDB Proxy', '@lampa', 'TMDB');
+				//		}
+				//		if (value == '2') {
+				//			var pluginToRemoveUrl = "http://cub.red/plugin/tmdb-proxy";
+				//			deletePlugin(pluginToRemoveUrl);
+				//		}
+				//	},
+				//	onRender: function (item) {
+				//		$('.settings-param__name', item).css('color','f3d900'); hideInstall();
+				//		var myResult = checkPlugin('http://cub.red/plugin/tmdb-proxy')
+				//		setTimeout(function() {	
+				//			$('div[data-name="TMDB"]').append('<div class="settings-param__status one"></div>')
+				//			if (myResult) {
+				//				$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('active')
+				//			} else {
+				//				$('div[data-name="TMDB"]').find('.settings-param__status').removeClass('active error wait').addClass('error')
+				//			}
+				//		}, 100);
+				//	}
+		//});
        
 		//Lampa.SettingsApi.addParam({
 		//			component: 'add_interface_plugin',
