@@ -733,16 +733,16 @@ Lampa.SettingsApi.addComponent({
 	        });*/
 	        
 
-        Lampa.Settings.listener.follow('open', function (e) {
+        /*Lampa.Settings.listener.follow('open', function (e) {
 					if (e.name == 'main') {
 						Lampa.SettingsApi.addComponent({
 							component: 'add_management_plugin',
 							name: 'Management'
 						});
 					}
-		});
+		});*/
 /* Управление */
-		Lampa.SettingsApi.addParam({
+		/*Lampa.SettingsApi.addParam({
 					component: 'add_plugin',
 					param: {
 						name: 'add_management_plugin',
@@ -760,7 +760,7 @@ Lampa.SettingsApi.addComponent({
 							}
 						});
 					}
-		});
+		});*/
        
 		/*Lampa.SettingsApi.addParam({
 					component: 'add_management_plugin',
